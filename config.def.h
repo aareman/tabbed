@@ -41,6 +41,13 @@ static const Key keys[] = {
 
 	{ MODKEY|ShiftMask,     XK_l,      rotate,      { .i = +1 } },
 	{ MODKEY|ShiftMask,     XK_h,      rotate,      { .i = -1 } },
+    // gt tab next
+    { 0,                    XK_g,      focusonce,   { 0 } },
+    { 0,                    XK_t,      rotate,      { .i = +1 } },
+    // gT tab prev
+    { ShiftMask,            XK_g,      focusonce,   { 0 } },
+    { ShiftMask,            XK_t,      rotate,      { .i = -1 } },
+
 	{ MODKEY|ShiftMask,     XK_j,      movetab,     { .i = -1 } },
 	{ MODKEY|ShiftMask,     XK_k,      movetab,     { .i = +1 } },
 	{ MODKEY,               XK_Tab,    rotate,      { .i = 0 } },
